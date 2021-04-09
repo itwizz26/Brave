@@ -1,0 +1,2 @@
+# Brave
+Earthquake Catalog API
