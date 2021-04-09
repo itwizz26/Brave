@@ -5,6 +5,7 @@
 
 <div class="container">
     <h1>Earthquake Catalog API</h1>
+    <p>This is a visual map of the Earthquake warnings in the past hour around the world as recorded by the USGS</p>
     <div id="earthquake-map"><!-- interactive map holder --></div>
 </div>
 
