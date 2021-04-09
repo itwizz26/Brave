@@ -7,7 +7,7 @@ To properly use the WP Brave Digital theme and Earthquake Catalog API plugin, fi
 Run this command inside the new theme (which should be brave-digital) to add the PHP composer package dependancies.
 ```composer install```
 
-Once completed, then clone the plugin inside the plugins directory in your working WordPress site and activate it.
+Once completed, then clone the plugin inside the plugins directory in your working WordPress site and activate it in the Admin panel of your WP site.
 
 When activated, the plugin will create a page called Earthquake Catalog. Open this page to view earthquake data for the past 1 hour.
 
