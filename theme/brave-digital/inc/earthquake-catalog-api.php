@@ -15,9 +15,10 @@ function getEarthQuakeData() {
     ]);
 
     // get data map
-    $end = date ('Y-m-d H:m');
-    $start = date ('Y-m-d H:m', strtotime ('-1 hour'));
-    $response = $client->request('GET', 'query?format=geojson&starttime=' . $start . '&endtime=' . $end);
+    $end = date ('Y-m-d h:i');
+    $start = date ('Y-m-d h:i', strtotime ('-1 hour'));
+
+    $response = $client->request('GET', 'query?format=geojson&starttime=' . $date . '&endtime=' . $end);
 
     // return response
     header('Content-type: application/json');
