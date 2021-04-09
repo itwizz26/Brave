@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Los_Angeles');
+
 // autoloader
 require_once dirname(dirname(__FILE__)) . '\vendor\autoload.php';
 
@@ -15,10 +17,10 @@ function getEarthQuakeData() {
     ]);
 
     // get data map
-    $end = date ('Y-m-d h:i');
-    $start = date ('Y-m-d h:i', strtotime ('-1 hour'));
+    $end = date ('Y-m-d H:i');
+    $start = date ('Y-m-d H:i', strtotime ('-1 hour'));
 
-    $response = $client->request('GET', 'query?format=geojson&starttime=' . $start . '&endtime=' . $end);
+    $response = $client->request('GET', 'query?format=geojson&starttime=' . date (DATE_ISO8601, strtotime ($start)) . '&endtime=' . date (DATE_ISO8601, strtotime ($end)));
 
     // return response
     header('Content-type: application/json');
