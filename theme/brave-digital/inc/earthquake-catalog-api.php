@@ -18,7 +18,7 @@ function getEarthQuakeData() {
     $end = date ('Y-m-d h:i');
     $start = date ('Y-m-d h:i', strtotime ('-1 hour'));
 
-    $response = $client->request('GET', 'query?format=geojson&starttime=' . $date . '&endtime=' . $end);
+    $response = $client->request('GET', 'query?format=geojson&starttime=' . $start . '&endtime=' . $end);
 
     // return response
     header('Content-type: application/json');
