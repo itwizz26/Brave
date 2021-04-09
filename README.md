@@ -3,7 +3,7 @@ Earthquake Catalog API
 
 ## Installation
 
-To properly use the WP Brave Digital theme and Earthquake Catalog API plugn, first download/clone the theme into your WP themes directory and activate it.
+To properly use the WP Brave Digital theme and Earthquake Catalog API plugin, first download/clone the theme into your WP themes directory and activate it.
 Run this command inside the new theme (which should be brave-digital) to add the PHP composer package dependancies.
 ```composer install```
 
@@ -19,4 +19,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ### Developer
 
-Application crafted and perfected by [itwizz26](https://github.com/itwizz26).
+Theme and plugin crafted and perfected by [itwizz26](https://github.com/itwizz26).
