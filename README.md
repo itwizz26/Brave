@@ -1,4 +1,4 @@
-# Brave
+# Brave Digital
 Earthquake Catalog API
 
 ## Installation
